@@ -10,7 +10,6 @@ img {
 body {
     background-color: #ddd;
     font-size: 18px;
-    font-family: 'Poppins' Arial, Helvetica, sans-serif;
     margin: 50px;
 }
 
@@ -22,6 +21,7 @@ body {
 
 /* header */
 .header {
+    font-family: 'Protest Revolution', sans-serif;
     display: grid;
     grid-template-areas: 
         'hero hero feature-1'
@@ -39,6 +39,12 @@ body {
 
 .hero > * {
     display: none;
+}
+.hero h2 {
+    background-color: transparent;
+}
+.hero .sub-heading {
+    background-color: transparent;
 }
 
 .features {
@@ -75,6 +81,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
+    font-family: 'Nunito', sans-serif;
 }
 
 .menu .brand {
@@ -152,6 +159,7 @@ body {
 
 /* services */
 .services {
+    font-family: 'Nunito', sans-serif;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -175,13 +183,14 @@ body {
 }
 
 .service p {
-    font-weight: 200;
+    font-weight: 700;
     letter-spacing: 1px;
     font-size: 0.8em;
 }
 
 /* gallery */
 .gallery {
+    font-family: 'Nunito', sans-serif;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-top:100px;
@@ -238,6 +247,7 @@ body {
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
+        /* font-size: 2em; */
         background-color: rgb(0, 0, 0);
         z-index: 1;
         transform: translateY(-100%);
